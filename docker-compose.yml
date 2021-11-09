@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  os:
+    build: ./docker/ubuntu
+    volumes:
+      - type: bind
+        source: ./images
+        target: /var/app
+        consistency: cached
