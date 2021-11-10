@@ -2,7 +2,7 @@
 
 shopt -s nullglob
 
-for FILE in /var/app/unprocessed/*.jp*; do
+for FILE in /var/app/unprocessed/*.*; do
   echo "Encountered file: $FILE";
   CURRENT_FILE_PATH=$(readlink -f "$FILE");
   CURRENT_FILE_NAME=$(basename "$FILE");
